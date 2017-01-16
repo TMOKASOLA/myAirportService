@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0"
+            prefWidth="1229.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="airlinservice.Controllers.registerController">
+    <SplitPane dividerPositions="0.4967585089141005" layoutX="-2.0" layoutY="-1.0" prefHeight="719.0"
+               prefWidth="1236.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="693.0" prefWidth="580.0">
+                <Label alignment="TOP_CENTER" prefHeight="70.0" prefWidth="577.0"
+                       text="New Client Registration" textAlignment="CENTER">
+                    <font>
+                        <Font size="21.0"/>
+                    </font>
+                </Label>
+                <Pane id="panelFace" prefHeight="401.0" prefWidth="580.0" style="-fx-border-color: blue;">
+                    <VBox.margin>
+                        <Insets bottom="20.0"/>
+                    </VBox.margin>
+                </Pane>
+                <TextField fx:id="txtFieldIdNum" prefHeight="38.0" prefWidth="580.0"
+                           promptText="Enter Your ID...">
+                    <VBox.margin>
+                        <Insets bottom="20.0"/>
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="155.0" text="Take Picture"/>
+            </VBox>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="684.0" prefWidth="590.0">
+                <Label alignment="CENTER" prefHeight="35.0" prefWidth="596.0" text="Personal Information: "
+                       textAlignment="CENTER">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="txtFieldName" prefHeight="41.0" prefWidth="590.0"
+                           promptText="Enter Your Name....">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="txtFieldSurname" prefHeight="44.0" prefWidth="590.0"
+                           promptText="Enter Your Surname...">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="txtFieldCellphone" prefHeight="43.0" prefWidth="590.0"
+                           promptText="Enter Your Cellphone Number...">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="txtFieldEmail" prefHeight="44.0" prefWidth="590.0"
+                           promptText="Enter Your Email Address...">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </TextField>
+                <ComboBox fx:id="comboGender" prefHeight="30.0" prefWidth="157.0" promptText="Your Gender">
+                    <VBox.margin>
+                        <Insets bottom="15.0"/>
+                    </VBox.margin>
+                </ComboBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <Button fx:id="btnSubmit" mnemonicParsing="false" prefHeight="36.0"
+                            prefWidth="106.0" text="Submit">
+                        <HBox.margin>
+                            <Insets right="15.0"/>
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="btnCancel" mnemonicParsing="false" prefHeight="37.0"
+                            prefWidth="108.0" text="Cancel"/>
+                </HBox>
+            </VBox>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>
